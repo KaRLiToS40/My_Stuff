@@ -42,7 +42,6 @@ public class GestorDatos {
 		try (Scanner sc = new Scanner(new File(nombreFichero))){
 			txtArea.setText("USUARIOS\tSCORE\tASTEROIDES\tESTRELLAS\tESCUDOS\tTIEMPO\n");
 			while (sc.hasNextLine()) {
-				System.out.println("HOLA");
 				String[] linea = sc.nextLine().split("\t");
 				lecturaUsuarios.add(traducirLineAUsuario(linea));
 			}
